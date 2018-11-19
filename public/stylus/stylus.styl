@@ -1,0 +1,851 @@
+@import 'jeet'
+@font-face
+    font-family RobotoBlack
+    font-style normal
+    src url(../fonts/Roboto-Black.ttf)
+@font-face
+    font-family RobotoBold
+    font-style normal
+    src url(../fonts/Roboto-Bold.ttf)
+@font-face
+    font-family RobotoMedium
+    font-style normal
+    src url(../fonts/Roboto-Medium.ttf)
+*,
+*:after,
+*:before
+    margin 0
+    padding 0
+    box-sizing border-box
+html
+    height 100%
+    max-height 1090px
+body
+    margin 0
+    font-family RobotoBlack
+    height 100%
+    max-height 1090px
+    margin 0 auto
+    font-size 18px
+video
+    position fixed
+    top 50%
+    left 50%
+    min-width 100%
+    min-height 100%
+    max-height 1090
+    width 100%
+    height auto
+    z-index -100
+    transform translateX(-50%) translateY(-50%)
+    background url('') no-repeat
+    background-size cover
+    transition 1s opacity
+.hidden
+    display none
+.center
+    text-align center !important
+.vertical
+    align(vertical)
+.white
+    color #fff
+.img-responsive
+    max-width 100%
+    height auto
+.wrapper
+    center(1225px, 10px)
+.logotipo-col
+    column(1/6)
+.nav-col
+    column(5/6)
+    div
+        column(1/6)
+        text-align center
+.one-col
+    column(1)
+.two-col
+    column(1/2)
+.three-col
+    span(1/3)
+    margin-bottom 20px
+.m-top50
+    margin-top 50px
+.m-bottom100
+    margin-bottom 100px
+.transparent
+    opacity 0
+ /***********************
+/* nav
+/***********************/
+.menu
+    position fixed
+    z-index 999
+    width: 100%;
+    padding 20px 0 0 0
+    .logotipo
+        font-size 58px
+        position relative
+        top -18px
+        color #fff
+        text-decoration none
+        :hover
+            text-decoration none
+            color purple
+nav
+    text-align right
+    top 5px
+    position relative
+    a
+        color white
+        text-decoration none
+        text-transform uppercase
+        font-size 21px
+        display inline-block
+        padding 5px 3px
+        margin-left 30px
+        font-family RobotoMedium
+    :last-child
+        margin-right 40px
+    :hover
+        text-decoration underline
+        color #fff
+.scrolling
+    background rgba(64, 86, 195, .5)
+/***********************
+/* home
+/***********************/
+#home
+    height 100%
+    max-height 1090px
+    .scrollVideo
+        height 100%
+        max-height 1090px
+        .container#section-wipes
+            height 100%
+            max-height 1090px
+            .pt-wrapper
+                height 100%
+                max-height 1090px
+                perspective 850px
+.pt-page
+    width 100%
+    height 100%
+    max-height 1090px
+    position absolute
+    visibility hidden
+    backface-visibility hidden
+    transform translate3d(0, 0, 0)
+    transform-style preserve-3d
+.home
+    background url("../img/background-home.jpg")
+    background-size 100% auto
+    background-position top center
+    background-repeat no-repeat
+    .pt-trigger
+        align(both)
+        cursor pointer
+        background none
+        border none
+.video-container
+    position relative
+    padding-bottom 56.25%
+    padding-top 30px
+    height 0
+    overflow hidden
+.video-container iframe, .video-container object, .video-container embed
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    max-height 1090px
+img.img-responsive.subtitle
+    margin-left 110px
+.pt-page-current, .no-js .pt-page
+    visibility visible
+    z-index 1
+.no-js
+    body
+        overflow auto
+.pt-message
+    display none
+    position absolute
+    z-index 99999
+    bottom 0
+    left 0
+    width 100%
+    background #da475c
+    color #fff
+    text-align center
+    p
+        margin 0
+        line-height 60px
+        font-size 26px
+.no-cssanimations
+    .pt-message
+        display block
+.home-play img
+    opacity 0.5
+.home-play:hover img
+    opacity 1
+.home-pause
+    cursor pointer
+    background none
+    border none
+    position absolute
+    right 0
+    top 75px
+    margin-top 15px
+    margin-right 15px
+    width 100px
+.home-pause img
+    opacity 0.5
+    width 100%
+.home-pause:hover img
+    opacity 1
+/***********************
+/* be-strong
+/***********************/
+.be-strong
+    position relative
+    margin-top -7%
+    .absolute
+        position absolute
+        width 100%
+        margin-top -40%
+   // background url("../img/background-strong222.png")
+    //background-size 100%
+    //margin-top -8%
+    //height 105%
+    //max-height 840px
+    //z-index 9
+    //.be-strong-titulo
+        //padding-top 170px
+/***********************
+/* conquistas
+/***********************/
+.item
+    display none
+.conquistas
+    text-align center
+    padding-top 220px
+    padding-bottom 220px
+    margin-top -8%
+    position relative
+    z-index 10
+    background url("../img/background-conquistas.png")
+    background-size cover
+    background-position top center
+    .button-style
+        position absolute
+        display block
+        text-align center
+        padding-top 20px
+        width 147px
+        height 200px
+        background url("../img/background-button.png") no-repeat
+        bottom 30px
+        margin-left calc(50% - 147px / 2)
+    #conquistas-content
+        display none
+/***********************
+/* produtos
+/***********************/
+.produtos
+    background url("../img/bg-produtos.png")
+    background-size 100%
+    height 100%
+    max-height 1010px
+    position relative
+    margin-top -8%
+    z-index 11
+    .produtos-titulo
+        z-index 99
+.produtos-infos
+    background url("../img/background-info-produtios.png")
+    background-size 100%
+    background-position-y 25px
+    width 45%
+    padding 80px 70px 50px 50px
+    position absolute
+    height 100%
+    max-height 1090px
+    z-index 9999
+    color #fff
+    font-family RobotoMedium
+    h1
+        font-family RobotoBlack
+        font-size: 2em;
+        margin-bottom 10px
+    h4
+        height 42px
+        position relative
+        margin-bottom 10px
+        font-size 1.3em
+        font-family RobotoBold
+        img
+            float left
+            margin-right 10px
+        span
+            align(vertical)
+    ul
+        margin-left 70px
+        font-size 1.2em
+        margin-top 5px
+        margin-bottom 15px
+        line-height 22px
+
+
+.produtos-info-off
+    left -45%
+.produtos-info-on
+    left 0px
+.alpinista
+    display block
+    width 60%
+    height 100%
+    max-height 1090px
+    position absolute
+    z-index 999
+    right 0
+    bottom 0
+    text-align right
+.btn-produtos
+    background url("../img/background-button-produtos.png")
+    background-size 100%
+    background-repeat no-repeat
+    width 241px
+    display block
+    text-align right
+    padding 80px 25px 80px 0
+    position absolute
+    top 45%
+    right -80px
+.two-col2
+    span(1/2)
+.wrapper2
+    position absolute
+    z-index 9
+    height 100%
+    max-height 1090px
+    scene05
+        margin-top 15%
+/***********************
+/* oportunidades
+/***********************/
+.oportunidades
+    background url("../img/background-oportunidades.png")
+    background-size 100%
+    background-repeat no-repeat
+    height 125%
+    max-height 1100px
+    position relative
+    overflow hidden
+    margin-top -6%
+    z-index 11
+.oportunidades-infos
+    background url("../img/background-info-oportunidades.png")
+    background-repeat no-repeat
+    background-size 100%
+    width 45%
+    padding 100px 50px 50px 100px
+    position absolute
+    height 100%
+    max-height 1100px
+    z-index 9
+    color #fff
+    right 0
+    .oportunidades-txt
+        position relative
+        color black
+        z-index 999
+        align(vertical)
+        width 100%
+        h5
+            color black
+            position relative
+            height 45px
+            margin-bottom 15px
+            font-family RobotoBold
+            font-size 1.3em
+            img
+                float left
+                margin-right 10px
+            span
+                align(vertical)
+.oportunidades-info-off
+    right -45%
+.oportunidades-info-on
+    right 0
+.btn-oportunidades
+    background url("../img/background-button-oportunidades.png")
+    background-size 100%
+    background-repeat no-repeat
+    width 241px
+    display block
+    text-align left
+    padding 80px 0px 80px 25px
+    position absolute
+    top 45%
+    left -100px
+.oportunidades-titulo
+    padding-right 50px
+/***********************
+/* cases
+/***********************/
+.cases
+    background url("../img/background-cases.png")
+    background-size 100%
+    position relative
+    margin-top -5%
+    z-index 11
+.cases-titulo
+    text-align center
+    padding-top 150px
+.owl-carousel
+    width 60%
+#project-terms
+    text-align center
+    padding 20px
+    a
+        font-size 1em
+        text-align center
+        padding 0 10px
+        display inline-block
+        color #000
+        font-weight bold
+        &:last-child
+            border-left solid 1px #f1f1f1
+        &:first-child
+            border-right solid 1px #f1f1f1
+#owl-case
+    .owl-item
+        & > div
+            padding 0px 2px
+            img
+                display block
+                width 100%
+                border-radius 3px
+                margin-bottom 4px
+.owl-case
+    width 70%
+    display block
+    margin 0 auto
+.owl-buttons
+    position absolute
+    width 100%
+    top 40%
+.owl-prev
+    width 55px
+    height 59px
+    background-image url("../img/btn-arrow-left.png")
+    position absolute
+    left -60px
+    text-align center
+.owl-next
+    width 55px
+    height 59px
+    background-image url("../img/btn-arrow-right.png")
+    position absolute
+    right -60px
+    text-align center
+.active
+    color red
+
+.hide
+    display none
+/***********************
+/* contato
+/***********************/
+.alert
+    width 100%
+    padding 20px
+    text-align center
+    border-radius 5px
+    font-family RobotoMedium
+    font-size 1em
+    font-weight normal
+.alert-success
+    background-color #dff0d8
+    color #3c763d
+.alert-danger
+    background-color #f2dede
+    color #a94442
+.loading
+    display none
+.contato
+    color white
+    background-image url("../img/background-contato.jpg")
+    background-repeat no-repeat
+    background-color #000
+    background-size 100%
+    position relative
+    z-index 11
+    .two-col
+        padding-top 150px
+    .button
+        width 100%
+        border-radius 5px
+        background-color #fff
+        color #000;
+        font-size 1em
+        font-weight bold
+        text-align center
+        border none
+        padding 10px
+        cursor pointer
+        &:hover
+            background-color rgb(64, 86, 195)
+    form
+        width 100%
+        text-align center
+        margin-top 20px
+        color #ffffff
+        padding-bottom 20px
+
+input , textarea
+    width 100%
+    border-radius 5px
+    background-color #000
+    margin 5px
+    font-size 0.9em
+    color #fff
+    padding 15px 10px
+    border solid 1px #555
+
+input.error , textarea.error
+    border solid 1px #E42020
+label.error
+    font-family RobotoMedium
+    font-size 0.7em
+    font-weight normal
+    padding-left 10px
+    margin-bottom 5px
+    display block
+    width 100%
+    text-align left
+    color #E42020
+input:focus , textarea:focus
+    border solid 1px #fff
+    box-shadow 0px 0px 3px #fff
+    border-radius 5px
+
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************/
+
+/*******
+* animations
+*******/
+.grau180
+    transform rotate(180deg)
+
+.produtos-info-off
+    animation produtos-info-off 0.8s ease-in
+    transform translate3d(0, 0, 0)
+
+.produtos-info-on
+    animation  produtos-info-on 0.8s ease-out
+    transform  translate3d(0, 0, 0)
+
+@keyframes produtos-info-on
+    0% {
+        left  -45%
+    }
+    100% {
+        left  0px;
+    }
+
+@keyframes produtos-info-off
+    0% {
+        left  0px
+    }
+    100% {
+        left: -45%
+    }
+
+.oportunidades-info-off {
+    animation: oportunidades-info-off 0.8s ease-in;
+    transform: translate3d(0, 0, 0);
+}
+.oportunidades-info-on {
+    animation: oportunidades-info-on 0.8s ease-out;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes oportunidades-info-on
+    0% {
+        right -45%
+    }
+    100% {
+        right 0px
+    }
+@keyframes oportunidades-info-off
+    0% {
+        right 0px
+    }
+    100% {
+        right -45%
+    }
+
+.floating
+    float left
+    animation Floating 3s infinite ease-in-out
+    margin-left 30px
+    margin-top 5px
+
+@keyframes Floating
+    from {
+        transform translate(0, 0px)
+    }
+    65% {
+        transform translate(0, 15px)
+    }
+    to {
+        transform translate(0, -0px)
+    }
+
+.rotate-up
+    animation animationRotate infinite ease 4s
+    transform-origin 50% 50%
+
+@keyframes animationRotate
+    0% {
+        transform translate(0px,0px) rotate(0deg)
+    }
+    25% {
+        transform translate(0px,30px) rotate(0deg)
+    }
+    50% {
+        transform translate(0px,12px) rotate(20deg)
+    }
+    78% {
+        transform translate(0px,30px)  rotate(-381deg)
+    }
+    100% {
+        transform translate(0px,0px)  rotate(0deg)
+    }
+
+.rotate-down{
+    animation animationRotateDown infinite ease 4s
+    transform-origin 50% 50%
+}
+
+@keyframes animationRotateDown
+  0% {
+    transform translate(0px,0px)  rotate(180deg) scaleX(1.00)
+  }
+  25% {
+    transform translate(0px,30px)  rotate(180deg) scaleX(1.00)
+  }
+  50% {
+    transform translate(0px,12px)  rotate(200deg) scaleX(1.00)
+  }
+  79% {
+    transform translate(0px,30px)  rotate(160deg) scaleX(0.99)
+  }
+  100% {
+    transform translate(0px,0px)  rotate(180deg) scaleX(0.99)
+  }
+/******
+* clouds
+******/
+.sky
+    height 560px
+    position relative
+    overflow hidden
+    padding-top 250px
+
+.clouds_one
+    background url("../img/cloud_one.png");
+    position absolute
+    left 0
+    top 0
+    height 100%
+    width 300%
+    animation cloud_one 50s linear infinite;
+    transform translate3d(0, 0, 0)
+
+.clouds_two
+    background url("../img/cloud_two.png");
+    position absolute;
+    left 0
+    top 0
+    height 100%
+    width 300%
+    animation cloud_two 75s linear infinite
+    transform translate3d(0, 0, 0)
+
+.clouds_three
+    background url("../img/cloud_three.png")
+    position absolute
+    left 0
+    top 0
+    height 100%
+    width 300%
+    animation cloud_three 100s linear infinite
+    transform translate3d(0, 0, 0)
+
+@keyframes cloud_one {
+  0% {
+    left  0
+  }
+  100% {
+    left  -200%
+  }
+}
+
+@keyframes cloud_two {
+  0% {
+    left  0
+  }
+  100% {
+    left  -200%
+  }
+}
+
+@keyframes cloud_three {
+  0% {
+    left  0
+  }
+  100% {
+    left  -200%
+  }
+}
+
+.pt-page-rotateCubeTopOut
+    transform-origin 50% 100%
+    animation rotateCubeTopOut .6s both ease-in
+
+.pt-page-rotateCubeTopIn
+    transform-origin 50% 0%
+    animation  rotateCubeTopIn .6s both ease-in
+
+.pt-page-rotateCubeBottomOut
+    transform-origin  50% 0%
+    animation  rotateCubeBottomOut .6s both ease-in
+
+.pt-page-rotateCubeBottomIn
+    transform-origin  50% 100%;
+    animation  rotateCubeBottomIn .6s both ease-in
+
+
+/********************************* keyframes **************************************/
+
+/* cube */
+
+
+@keyframes rotateCubeTopOut
+    0% {
+
+    }
+    50% {
+        animation-timing-function  ease-out
+        transform  translateY(-50%) translateZ(-200px) rotateX(45deg)
+    }
+    100% {
+        opacity  .3
+        transform translateY(-100%) rotateX(90deg)
+     }
+
+@keyframes rotateCubeTopIn
+    0% {
+        opacity  .3
+        transform  translateY(100%) rotateX(-90deg)
+    }
+    50% {
+        animation-timing-function: ease-out
+        transform translateY(50%) translateZ(-200px) rotateX(-45deg)
+    }
+@keyframes rotateCubeBottomOut
+    0% {
+
+    }
+    50% {
+        animation-timing-function ease-out
+        transform translateY(50%) translateZ(-200px) rotateX(-45deg)
+    }
+    100% {
+        opacity  .3
+        transform translateY(100%) rotateX(-90deg)
+    }
+@keyframes rotateCubeBottomIn
+    0% {
+        opacity .3
+        transform translateY(-100%) rotateX(90deg)
+    }
+    50% {
+        animation-timing-function  ease-out
+        transform  translateY(-50%) translateZ(-200px) rotateX(45deg)
+    }
+
+
+
+
+@media (min-width: 1441px)
+    body
+        font-size 30px
+    .produtos-infos ul
+        line-height 42px
+    .produtos-infos h4
+        &:last-child
+            margin-top 60px
+
+@media (max-width: 899px)
+    .menu .logotipo
+        font-size larger
+    .width50
+        max-width 50%
+    nav
+        display none
+    .scrolling
+        background none
+    #home
+        height 35%
+        background-size 100% 100%
+    //.be-strong
+    //    height 60%
+    //    background-size auto 100%
+
+    .conquistas
+        background-size auto 100%
+        padding-top 100px
+        margin-top -26%
+        .two-col
+            column(1)
+        .three-col
+            span(1)
+        .button-style
+            bottom -10px
+    .produtos
+        height 100%
+        margin-top -25%
+        background-size auto 100%
+        .two-col
+            column(1)
+        .three-col
+            span(1)
+        .produtos-infos
+            display none
+        .alpinista
+            display none
+    .oportunidades
+        height 100%
+        margin-top -25%
+        background-size auto 100%
+        .two-col
+            column(1)
+        .oportunidades-infos
+        .alpinista
+             display none
+        img.img-responsive.subtitle
+            margin-left 0
+    .contato
+        .two-col
+            column(1)
+    .owl-carousel
+        width 90% !important
+
+

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GoBuzz - Marketing de Performance</title>
+    <meta name="description" content="GoBuzz - Marketing de Performance">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="GoBuzz">
+    <meta name="distribution" content="Local">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="audience" content="all">
+    <meta name="web_author" content="dusigner.com.br">
+    <link rel="icon" href="img/favicon.gif">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/stylus.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+<!--***************
+Menu
+*******************-->
+<div class="menu">
+    <div class="wrapper">
+        <div class="logotipo-col">
+            <a href="#home" class="logotipo">GoBuzz</a>
+        </div>
+        <div class="nav-col">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#conquistas">Conquiste</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#oportunidades">Oportunidades</a>
+                <a href="#cases">Cases</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--***************
+HOME
+*******************-->
+<div id="home">
+    <div class="scrollVideo">
+        <div class="container" id="section-wipes">
+            <div class="pt-wrapper">
+                <div class="pt-page home">
+                    <button onclick="getController().play()" class="pt-trigger home-play" data-animation="60" data-goto="-1">
+                        <img src="img/play-video.png" alt="Play Vídeo" class="width50">
+                    </button>
+                </div>
+                <div class="pt-page pt-page-2">
+                    <button onclick="getController().pause()" class="pt-trigger home-pause" data-animation="61" data-goto="-2">
+                        <img src="img/play-video.png" alt="Stop Vídeo" class="width50">
+                    </button>
+                    <!--<button onclick="getController().muted=true"  class="home-pause" >
+                        <img src="img/play-video.png" alt="Stop Vídeo">
+                    </button>-->
+                    <!--<button onclick="getController().play()"  class="" >play</button>-->
+
+                    <video id="video" controls preload="none" loop poster="img/capa_video.jpg">
+                          <source src="video-gobuzz-home-top-low.mp4" type="video/mp4">
+                          <source src="video-gobuzz-home-top-low.3gp" type="video/3gp">
+                        <p>Seu navegador não suporta o elemento HTML5 Vídeo.</p>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--***************
+BE STRONG
+*******************-->
+<div class="be-strong">
+    <img src="img/background-strong.png" alt="Be Strong" class="img-responsive">
+    <div class="absolute">
+        <div class="wrapper">
+            <div class="two-col">
+                <span class="transparent">.</span>
+            </div>
+            <div class="two-col">
+            <div class="be-strong-titulo">
+                    <img src="img/be-strong.png" alt="Be Strong" class="img-responsive">
+                    <br>
+                    <img src="img/fortaleca-sua-marca.png" alt="Fortaleça sua marca" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--***************
+CONQUISTAS
+*******************-->
+<div id="conquistas" class="conquistas">
+    <div class="wrapper">
+        <div class="two-col">
+            <img src="img/conquista.png" alt="Conquiste" class="img-responsive">
+        </div>
+        <div class="two-col">
+            <img src="img/astronauta.png" alt="Astronauta" class="img-responsive floating">
+        </div>
+    </div>
+
+    <div id="conquistas-content">
+        <div class="wrapper">
+            <div class="one-col">
+                <img src="img/linha.png" alt="linha" class="img-responsive m-top50 animated zoomIn">
+            </div>
+            <div class="three-col">
+                <img src="img/melhor-esposicao-da-marca.png" alt="Esposição da Marca" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="three-col">
+                <img src="img/informacocoes-para-desicao.png" alt="Informações para desição" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="three-col">
+                <img src="img/aumento-de-vendas.png" alt="Aumento de Vendas" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="three-col">
+                <img src="img/identificacao-de-tendencias.png" alt="Identificação de tendencias" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="three-col">
+                <img src="img/embaixadores-da-marca.png" alt="Embaixadores da Marca" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="three-col">
+                <img src="img/aumento-do-indice.png" alt="Aumento do Indice" class="item img-responsive animated bounceIn">
+            </div>
+            <div class="one-col">
+                <img src="img/diagnostico-orientacao.png" alt="Dianostico Orientação" class="item img-responsive animated bounceIn">
+            </div>
+        </div>
+    </div>
+
+    <div id="pula"></div>
+    <a href="#pula" id="conquistas-button" class="button-style"><img src="img/button-icon.png" alt="Up and Down" id="conquista-open" class="rotate-down"></a>
+</div>
+<!--***************
+PRODUTOS
+*******************-->
+<section id="produtos" class="produtos">
+    <div class="produtos-infos produtos-info-off">
+        <div class="btn-produtos">
+            <a href="#" id="open-produtos">
+                <img src="img/button-produtos.png" alt="Produtos" id="btn-produtos-img">
+            </a>
+        </div>
+        <h1>PRODUTOS</h1>
+        <h4>
+            <img src="img/icon2.png" alt="Sites e Apps" class="hvr-bounce-in">
+            <span>Sites e APPs</span>
+        </h4>
+        <h4>
+            <img src="img/icon5.png" alt="Campanhas Publicações Oficiais" class="hvr-bounce-in">
+            <span>Campanhas Publicações Oficiais</span>
+        </h4>
+        <h4>
+            <img src="img/icon1.png" alt="Relatórios Estratégicos" class="hvr-bounce-in">
+            <span>Relatórios Estratégicos</span>
+        </h4>
+        <ul>
+            <li>Volume de menções</li>
+            <li>Sentimento - métricas</li>
+            <li>Temas envolvidos</li>
+            <li>Principais apoiadores</li>
+            <li>Principais assuntos</li>
+            <li>Ativação de ações</li>
+        </ul>
+        <h4><img alt="Mobilizações On e Offline" src="img/icon4.png" class="hvr-bounce-in">Mobilizações On e Offline</h4>
+        <h4><img alt="CRM - Desenvolvimento da base do público alvo" src="img/icon3.png" class="hvr-bounce-in">CRM - Desenvolvimento da base do público alvo</h4>
+        <h4><img alt="Tracking de marcas e pessoas" src="img/icon6.png" class="hvr-bounce-in">Tracking de marcas e pessoas</h4>
+    </div>
+    <div class="wrapper">
+        <div class="two-col">
+            <div class="vertical produtos-titulo">
+                <img alt="Produtos" src="img/produtos.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="two-col">
+            <span class="transparent">.</span>
+        </div>
+    </div>
+    <div class="alpinista">
+            <img alt="Titulo" src="img/alpinista.png" class="img-responsive">
+        </div>
+    <div class="sky">
+        <div class="clouds_one"></div>
+        <div class="clouds_two"></div>
+        <div class="clouds_three"></div>
+    </div>
+</section>
+<!--***************
+OPORTUNIDADES
+*******************-->
+<section id="oportunidades" class="oportunidades">
+    <div class="oportunidades-infos oportunidades-info-off">
+        <div class="btn-oportunidades">
+            <a href="#" id="open-oportunidades">
+                <img alt="open Oportunidades" src="img/button-orpotunidades.png" id="btn-oportunidades-img">
+            </a>
+        </div>
+        <div class="oportunidades-txt">
+            <h5>
+                <img alt="Confira o amor pela sua marca" src="img/icon8.png" class="hvr-pulse">
+                <span>Confira o amor pela sua marca</span>
+            </h5>
+            <h5>
+                <img alt="Identifique influenciadores" src="img/icon10.png" class="hvr-bounce-in">
+                <span>Identifique influenciadores</span>
+            </h5>
+            <h5>
+                <img alt="Desenvolva ações on e offline" src="img/icon7.png" class="hvr-bob">
+                <span>Desenvolva ações on e offline</span>
+            </h5>
+            <h5>
+                <img alt="Abra dialogo com seu público" src="img/icon12.png" class="hvr-wobble-top">
+                <span>Abra dialogo com seu público</span>
+            </h5>
+            <h5>
+                <img alt="Multiplique apoiadores" src="img/icon13.png" class="hvr-buzz">
+                <span>Multiplique apoiadores</span>
+            </h5>
+            <h5>
+                <img alt="Conquiste o seus objetivos" src="img/icon11.png" class="hvr-wobble-to-top-right">
+                <span>Conquiste o seus objetivos</span>
+            </h5>
+            <h5>
+                <img alt="Reforme o seu site/identidade" src="img/icon9.png" class="hvr-wobble-skew">
+                <span>Reforme o seu site/identidade</span>
+            </h5>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="two-col">
+            <span class="transparent">.</span>
+        </div>
+        <div class="two-col">
+            <div class="vertical">
+                <img alt="Oportunidades" src="img/oportunidades.png" class="img-responsive">
+                <img alt="Oportunidades" src="img/oportunidades-sub.png" class="img-responsive subtitle">
+            </div>
+        </div>
+    </div>
+</section>
+<!--***************
+CASES
+*******************-->
+<div id="cases" class="cases">
+    <div class="cases-titulo">
+        <img alt="Cases" src="img/cases.png" class="img-responsive">
+    </div>
+    <div id="project-terms">
+        <a id="all" class="active" href="#">Todos</a>
+        <a id="politico" href="#">Político</a>
+        <a id="empresa" href="#">Empresa</a>
+    </div>
+    <div class="owl-case">
+        <div id="owl-case">
+            <div class="project politico">
+                <img src="img/case_07.jpg" alt="Case 07">
+            </div>
+            <div class="project empresa">
+                <img src="img/case_01.jpg" alt="Case 01">
+            </div>
+            <div class="project politico">
+                <img src="img/case_04.jpg" alt="Case 04">
+            </div>
+            <div class="project empresa">
+                <img src="img/case_02.jpg" alt="Case 02">
+            </div>
+            <div class="project politico">
+                <img src="img/case_06.jpg" alt="Case 06">
+            </div>
+            <div class="project politico">
+                <img src="img/case_05.jpg" alt="Case 05">
+            </div>
+            <div class="project empresa">
+                <img src="img/case_03.jpg" alt="Case 03">
+            </div>
+            <div class="project politico">
+                <img src="img/case_08.jpg" alt="Case 08">
+            </div>
+        </div>
+    </div>
+    <div id="projects-copy" class="hide"></div>
+</div>
+<!--***************
+CONTATO
+*******************-->
+<section id="contato" class="contato">
+    <div class="wrapper">
+        <div class="two-col">
+            <h2 class="white">Entre em contato</h2>
+            <div class="alert alert-success hide" id="contactSuccess">
+                <strong>Ok!</strong> Sua Mensagem foi enviada com sucesso.
+            </div>
+
+            <div class="alert alert-danger hide" id="contactError">
+                <strong>Ops Error!</strong> Houve um erro ao enviar a sua mensagem.
+            </div>
+
+            <form id="contactForm" action="php/contact-form.php" method="POST">
+                <input type="text" value="" placeholder="Nome*" data-msg-required="Digite seu nome." maxlength="100" name="name" id="name" required pattern="[a-z\s]+$">
+                <input type="email" value="" placeholder="E-mail*" data-msg-required="Digite seu e-mail." data-msg-email="Digite um e-mail válido." maxlength="100" name="email" id="email" required>
+                <input type="text" value="" placeholder="Telefone*" data-msg-required="Digite seu telefone." maxlength="100" name="subject" id="subject" required>
+                <textarea placeholder="Mensagem" maxlength="5000" data-msg-required="Digite sua mensagem." rows="5" name="message" id="message" required></textarea>
+                <input class="button" type="submit" value="Enviar E-mail" data-loading-text="Enviando...">
+            </form>
+        </div>
+
+        <div class="two-col center">
+           <img alt="GoBuzz" src="img/logotipo-gobuzz-footer.png" class="img-responsive">
+           <br><br>
+           São Paulo - SP<br><br><strong>contato@gobuzz.com.br</strong>
+        </div>
+    </div>
+</section>
+<div class="pt-message">
+    <p>Seu navegador não suporta animações CSS.</p>
+    <p>Your browser does not support CSS animations.</p>
+</div>
+
+
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <!-- build:js js/index.min.js -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!-- Page Transition -->
+    <script type="text/javascript" src="js/transition.js"></script>
+    <!-- Parallax Mouse -->
+    <!-- Script Site -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.validation.min.js"></script>
+    <script src="js/view.contact.js"></script>
+    <!-- endbuild -->
+
+
+
+</body>
+</html>
